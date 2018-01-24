@@ -1,0 +1,70 @@
+<% include partials/header %>
+
+    <!-- HEADER -->
+    <header class="whathead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase">Careers</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Career Tabs -->
+    <div class="container avail-careers">
+        <div id="accordion" role="tablist">
+            <div class="card">
+                <div class="card-header" role="tab" id="headingOne">
+                    <h5 class="job-header mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Kent Center - BCBA
+                        </a>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <strong>
+                            <p>123 Fake Street</p>
+                            <p>Kirkland WA, 98033</p>
+                        </strong>
+                        <br>
+                        <p>
+                            This is for a position as a BCBA at the Kent Center down in Kent WA.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career Form -->
+    <div class="container">
+        <form id="style-form">
+            <div class="form-group">
+                <label for="fullName">Full Name: </label>
+                <input type="text" class="form-control" id="fullName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email: </label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject: </label>
+                <input type="subject" class="form-control" id="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message: </label>
+                <textarea name="message" class="form-control" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Upload Resume:</label>
+                <input type="file" class="form-control-file">
+            </div>
+            <div class="form-group">
+                <label>Cover Letter:</label>
+                <input type="file" class="form-control-file">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+
+<% include partials/footer %>
